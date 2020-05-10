@@ -1,7 +1,8 @@
 
 
 %macro plotDeceased();
-	ods html path="/folders/myfolders/covid/results/exploration" (URL=NONE) file="explore.html";
+	ods graphics on / imagemap=on reset=index;
+	ods html path="&coviddir/results/exploration" (URL=NONE) file="explore.html";
 	
 	proc sql;
 		create table plot_region as

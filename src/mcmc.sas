@@ -1,5 +1,5 @@
 data covid.mcmc_input;
-	set covid.mcmc_abt(where=(date>=valid_from and date<=valid_to and  rank_region_by_cases<=3  /*and region_name='Île-de-France'  and country='ITA'*/));
+	set covid.mcmc_abt(where=(date>=valid_from and date<=valid_to and  rank_region_by_cases<=3  /*and region_name='Île-de-France' and country='ENG'*/));
 run;
 
 data _null_;
@@ -24,8 +24,8 @@ data _null_;
 	call symput('gamma_var', log(10)*0.5);
 run;
 
-ods graphics on;
-ods graphics on / imagemap=off;
+ods graphics on / imagemap=off reset=index;
+ods html path="&coviddir/results/mcmc" (URL=NONE) file="mcmc.html";
 title "MCMC analysis of regions";
 proc mcmc
 	data=covid.mcmc_input
@@ -35,14 +35,16 @@ proc mcmc
 	ntu=50000
 	thin= 500
 	propcov=ind
-	mchistory= detail
+	mchistory= detailed
 	outpost=covid.mcmc_post
 	monitor=(mortality i0 R0 beta gamma)
 	plots(smooth)=all;
 	by country region_code region_name;
 	
 	preddist outpred=covid.mcmc_pred  saveparm;
-	ods output predsumint=covid.mcmc_predsum postsumint=covid.mcmc_postsumint;
+	ods output
+		predsumint=covid.mcmc_predsum
+		postsumint=covid.mcmc_postsumint;
 	parms log_mort &mort_mu log_i0 &i0_mu log_R0 &R0_mu log_gamma &gamma_mu;
 	prior log_mort ~ normal(&mort_mu, sd=&mort_var);
 	prior log_i0  ~ normal(&i0_mu, sd=&i0_var);
@@ -76,4 +78,4 @@ proc mcmc
 	*put days= int_dec_avg_dot= prob_deceased= model_deceased=;
 	model int_dec_avg_dot ~ binomial(region_population, p=arrpdec[date-valid_from+1]);
 quit;
-
+ods html close;

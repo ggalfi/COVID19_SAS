@@ -1,0 +1,2485 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.accessiblecaption
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.activelink
+{
+  color: #800080;
+}
+.aftercaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 4pt;
+}
+.batch
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  padding: 7px;
+}
+.beforecaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.body
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.bodydate
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
+  vertical-align: top;
+  width: 100%;
+}
+.bycontentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.byline
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.bylinecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.caption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.cell
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.container
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.contentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contentprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contents
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.contentsdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.contenttitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.continued
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+}
+.data
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasis
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasisfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.dataempty
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datafixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datastrong
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.datastrongfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.date
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.document
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+a:link {
+color:#0000FF
+}
+a:visited {
+color:#800080
+}
+a:active {
+color:#800080
+}
+.errorbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.errorcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.errorcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.extendedpage
+{
+  background-color: #FAFBFE;
+  border: 1pt solid #000000;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+.fatalbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.fatalcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.fatalcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.folderaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.footer
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footeremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footeremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.footerstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.frame
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.graph
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.header
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headeremphasis
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headeremphasisfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.headersandfooters
+{
+  background-color: #EDF2F9;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrong
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrongfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.heading1
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading2
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading3
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading4
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading5
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading6
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.index
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.indexaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.indextitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.layoutcontainer
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.layoutregion
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.linecontent
+{
+  background-color: #FAFBFE;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.link
+{
+  color: #0000FF;
+}
+.list
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.list10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.list3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.listitem10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.listitem3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.note
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notebanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.notecontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notecontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.output
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.pageno
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+}
+.pages
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.pagesdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.pagesitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.pagesproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagesprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagestitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.paragraph
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.parskip
+{
+  border: 0px solid #000000;
+  border-spacing: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.prepage
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.proctitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.proctitlefixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooter
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooteremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooteremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooterempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowfooterstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheader
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderemphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderemphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowheaderstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemtitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systitleandfootercontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.table
+{
+  border-bottom-width: 0px;
+  border-collapse: collapse;
+  border-color: #C1C1C1;
+  border-left-width: 1px;
+  border-right-width: 0px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-top-width: 1px;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+  border: 0;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+  border: 0;
+}
+.titleandnotecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.titlesandfooters
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.usertext
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.visitedlink
+{
+  color: #800080;
+}
+.warnbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.warncontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warncontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</script>
+
+<div class="branch">
+<a name="IDX"></a>
+<div>
+<map name="SGPlot">
+<Area shape="poly" alt=" Y = 0.14" title=" Y = 0.14" coords="74,170,624,170,624,172,74,172,"/>
+<Area shape="poly" alt=" rel_dev_mean = 0.0749 
+ rel_dev_median = 0.0445 
+ country = US 
+ region_name = New York" title=" rel_dev_mean = 0.0749 
+ rel_dev_median = 0.0445 
+ country = US 
+ region_name = New York" coords="145,373,150,373,150,378,145,378,145,373,"/>
+<Area shape="poly" alt=" rel_dev_mean = 0.2198 
+ rel_dev_median = 0.1884 
+ country = US 
+ region_name = New Jersey" title=" rel_dev_mean = 0.2198 
+ rel_dev_median = 0.1884 
+ country = US 
+ region_name = New Jersey" coords="532,64,537,64,537,69,532,69,532,64,"/>
+<Area shape="poly" alt=" rel_dev_mean = 0.1979 
+ rel_dev_median = 0.1599 
+ country = US 
+ region_name = Massachusetts" title=" rel_dev_mean = 0.1979 
+ rel_dev_median = 0.1599 
+ country = US 
+ region_name = Massachusetts" coords="474,125,479,125,479,130,474,130,474,125,"/>
+<Area shape="poly" alt=" rel_dev_mean = 0.0956 
+ rel_dev_median = 0.0790 
+ country = ITA 
+ region_name = Emilia-Romagna" title=" rel_dev_mean = 0.0956 
+ rel_dev_median = 0.0790 
+ country = ITA 
+ region_name = Emilia-Romagna" coords="201,299,206,299,206,304,201,304,201,299,"/>
+<Area shape="poly" alt=" rel_dev_mean = 0.1385 
+ rel_dev_median = 0.1130 
+ country = ITA 
+ region_name = Lombardia" title=" rel_dev_mean = 0.1385 
+ rel_dev_median = 0.1130 
+ country = ITA 
+ region_name = Lombardia" coords="315,226,320,226,320,231,315,231,315,226,"/>
+<Area shape="poly" alt=" rel_dev_mean = 0.1481 
+ rel_dev_median = 0.1169 
+ country = ITA 
+ region_name = Piemonte" title=" rel_dev_mean = 0.1481 
+ rel_dev_median = 0.1169 
+ country = ITA 
+ region_name = Piemonte" coords="341,218,346,218,346,223,341,223,341,218,"/>
+<Area shape="poly" alt=" rel_dev_mean = 0.2253 
+ rel_dev_median = 0.1960 
+ country = GER 
+ region_name = Bayern" title=" rel_dev_mean = 0.2253 
+ rel_dev_median = 0.1960 
+ country = GER 
+ region_name = Bayern" coords="547,48,552,48,552,53,547,53,547,48,"/>
+<Area shape="poly" alt=" rel_dev_mean = 0.2176 
+ rel_dev_median = 0.1764 
+ country = GER 
+ region_name = Baden-Württemberg" title=" rel_dev_mean = 0.2176 
+ rel_dev_median = 0.1764 
+ country = GER 
+ region_name = Baden-Württemberg" coords="527,90,532,90,532,95,527,95,527,90,"/>
+<Area shape="poly" alt=" rel_dev_mean = 0.2353 
+ rel_dev_median = 0.1811 
+ country = GER 
+ region_name = Nordrhein-Westfalen" title=" rel_dev_mean = 0.2353 
+ rel_dev_median = 0.1811 
+ country = GER 
+ region_name = Nordrhein-Westfalen" coords="574,80,579,80,579,85,574,85,574,80,"/>
+<Area shape="poly" alt=" rel_dev_mean = 0.1136 
+ rel_dev_median = 0.0901 
+ country = FRA 
+ region_name = Grand Est" title=" rel_dev_mean = 0.1136 
+ rel_dev_median = 0.0901 
+ country = FRA 
+ region_name = Grand Est" coords="249,275,254,275,254,280,249,280,249,275,"/>
+<Area shape="poly" alt=" rel_dev_mean = 0.2415 
+ rel_dev_median = 0.1644 
+ country = FRA 
+ region_name = Hauts-de-France" title=" rel_dev_mean = 0.2415 
+ rel_dev_median = 0.1644 
+ country = FRA 
+ region_name = Hauts-de-France" coords="590,115,595,115,595,120,590,120,590,115,"/>
+<Area shape="poly" alt=" rel_dev_mean = 0.1479 
+ rel_dev_median = 0.1213 
+ country = FRA 
+ region_name = Île-de-France" title=" rel_dev_mean = 0.1479 
+ rel_dev_median = 0.1213 
+ country = FRA 
+ region_name = Île-de-France" coords="340,208,345,208,345,213,340,213,340,208,"/>
+<Area shape="poly" alt=" rel_dev_mean = 0.0798 
+ rel_dev_median = 0.0626 
+ country = ESP 
+ region_name = Community of Madrid" title=" rel_dev_mean = 0.0798 
+ rel_dev_median = 0.0626 
+ country = ESP 
+ region_name = Community of Madrid" coords="158,334,163,334,163,339,158,339,158,334,"/>
+<Area shape="poly" alt=" rel_dev_mean = 0.1817 
+ rel_dev_median = 0.1592 
+ country = ESP 
+ region_name = Catalonia" title=" rel_dev_mean = 0.1817 
+ rel_dev_median = 0.1592 
+ country = ESP 
+ region_name = Catalonia" coords="431,127,436,127,436,132,431,132,431,127,"/>
+<Area shape="poly" alt=" rel_dev_mean = 0.0866 
+ rel_dev_median = 0.0675 
+ country = ESP 
+ region_name = Castile and León" title=" rel_dev_mean = 0.0866 
+ rel_dev_median = 0.0675 
+ country = ESP 
+ region_name = Castile and León" coords="177,324,182,324,182,329,177,329,177,324,"/>
+<Area shape="poly" alt=" rel_dev_mean = 0.0648 
+ rel_dev_median = 0.0555 
+ country = ENG 
+ region_name = North West" title=" rel_dev_mean = 0.0648 
+ rel_dev_median = 0.0555 
+ country = ENG 
+ region_name = North West" coords="118,350,123,350,123,355,118,355,118,350,"/>
+<Area shape="poly" alt=" rel_dev_mean = 0.0576 
+ rel_dev_median = 0.0405 
+ country = ENG 
+ region_name = Midlands" title=" rel_dev_mean = 0.0576 
+ rel_dev_median = 0.0405 
+ country = ENG 
+ region_name = Midlands" coords="99,382,104,382,104,387,99,387,99,382,"/>
+<Area shape="poly" alt=" rel_dev_mean = 0.0650 
+ rel_dev_median = 0.0490 
+ country = ENG 
+ region_name = London" title=" rel_dev_mean = 0.0650 
+ rel_dev_median = 0.0490 
+ country = ENG 
+ region_name = London" coords="119,364,124,364,124,369,119,369,119,364,"/>
+</map>
+<div  class="c">
+<img alt="The SGPlot Procedure" src="SGPlot.png" style=" height: 480px; width: 640px;" border="0" usemap="#SGPlot" class="c">
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX1"></a>
+<div>
+<map name="SGPlot1">
+<Area shape="poly" alt=" R0 = 15.2264 
+ mortality = 0.00220 
+ country = US 
+ region_name = New York" title=" R0 = 15.2264 
+ mortality = 0.00220 
+ country = US 
+ region_name = New York" coords="437,130,442,130,442,135,437,135,437,130,"/>
+<Area shape="poly" alt=" R0 = 22.3195 
+ mortality = 0.00291 
+ country = US 
+ region_name = New Jersey" title=" R0 = 22.3195 
+ mortality = 0.00291 
+ country = US 
+ region_name = New Jersey" coords="617,49,622,49,622,54,617,54,617,49,"/>
+<Area shape="poly" alt=" R0 = 2.7025 
+ mortality = .0009884 
+ country = US 
+ region_name = Massachusetts" title=" R0 = 2.7025 
+ mortality = .0009884 
+ country = US 
+ region_name = Massachusetts" coords="119,269,124,269,124,274,119,274,119,269,"/>
+<Area shape="poly" alt=" R0 = 7.7059 
+ mortality = 0.00104 
+ country = ITA 
+ region_name = Emilia-Romagna" title=" R0 = 7.7059 
+ mortality = 0.00104 
+ country = ITA 
+ region_name = Emilia-Romagna" coords="246,264,251,264,251,269,246,269,246,264,"/>
+<Area shape="poly" alt=" R0 = 6.7552 
+ mortality = 0.00167 
+ country = ITA 
+ region_name = Lombardia" title=" R0 = 6.7552 
+ mortality = 0.00167 
+ country = ITA 
+ region_name = Lombardia" coords="222,191,227,191,227,196,222,196,222,191,"/>
+<Area shape="poly" alt=" R0 = 2.2933 
+ mortality = 0.00105 
+ country = ITA 
+ region_name = Piemonte" title=" R0 = 2.2933 
+ mortality = 0.00105 
+ country = ITA 
+ region_name = Piemonte" coords="108,263,113,263,113,268,108,268,108,263,"/>
+<Area shape="poly" alt=" R0 = 3.2071 
+ mortality = .0001603 
+ country = GER 
+ region_name = Bayern" title=" R0 = 3.2071 
+ mortality = .0001603 
+ country = GER 
+ region_name = Bayern" coords="131,364,136,364,136,369,131,369,131,364,"/>
+<Area shape="poly" alt=" R0 = 2.4625 
+ mortality = .0001493 
+ country = GER 
+ region_name = Baden-Württemberg" title=" R0 = 2.4625 
+ mortality = .0001493 
+ country = GER 
+ region_name = Baden-Württemberg" coords="112,365,117,365,117,370,112,370,112,365,"/>
+<Area shape="poly" alt=" R0 = 1.6916 
+ mortality = .0001125 
+ country = GER 
+ region_name = Nordrhein-Westfalen" title=" R0 = 1.6916 
+ mortality = .0001125 
+ country = GER 
+ region_name = Nordrhein-Westfalen" coords="93,369,98,369,98,374,93,374,93,369,"/>
+<Area shape="poly" alt=" R0 = 6.0669 
+ mortality = .0005508 
+ country = FRA 
+ region_name = Grand Est" title=" R0 = 6.0669 
+ mortality = .0005508 
+ country = FRA 
+ region_name = Grand Est" coords="204,319,209,319,209,324,204,324,204,319,"/>
+<Area shape="poly" alt=" R0 = 5.0371 
+ mortality = .0002733 
+ country = FRA 
+ region_name = Hauts-de-France" title=" R0 = 5.0371 
+ mortality = .0002733 
+ country = FRA 
+ region_name = Hauts-de-France" coords="178,351,183,351,183,356,178,356,178,351,"/>
+<Area shape="poly" alt=" R0 = 6.5734 
+ mortality = .0005653 
+ country = FRA 
+ region_name = Île-de-France" title=" R0 = 6.5734 
+ mortality = .0005653 
+ country = FRA 
+ region_name = Île-de-France" coords="217,318,222,318,222,323,217,323,217,318,"/>
+<Area shape="poly" alt=" R0 = 6.8405 
+ mortality = 0.00136 
+ country = ESP 
+ region_name = Community of Madrid" title=" R0 = 6.8405 
+ mortality = 0.00136 
+ country = ESP 
+ region_name = Community of Madrid" coords="224,227,229,227,229,232,224,232,224,227,"/>
+<Area shape="poly" alt=" R0 = 15.9582 
+ mortality = .0009919 
+ country = ESP 
+ region_name = Catalonia" title=" R0 = 15.9582 
+ mortality = .0009919 
+ country = ESP 
+ region_name = Catalonia" coords="455,269,460,269,460,274,455,274,455,269,"/>
+<Area shape="poly" alt=" R0 = 8.4515 
+ mortality = .0008715 
+ country = ESP 
+ region_name = Castile and León" title=" R0 = 8.4515 
+ mortality = .0008715 
+ country = ESP 
+ region_name = Castile and León" coords="265,282,270,282,270,287,265,287,265,282,"/>
+<Area shape="poly" alt=" R0 = 4.4788 
+ mortality = .0005136 
+ country = ENG 
+ region_name = North West" title=" R0 = 4.4788 
+ mortality = .0005136 
+ country = ENG 
+ region_name = North West" coords="164,323,169,323,169,328,164,328,164,323,"/>
+<Area shape="poly" alt=" R0 = 4.6868 
+ mortality = .0004553 
+ country = ENG 
+ region_name = Midlands" title=" R0 = 4.6868 
+ mortality = .0004553 
+ country = ENG 
+ region_name = Midlands" coords="169,330,174,330,174,335,169,335,169,330,"/>
+<Area shape="poly" alt=" R0 = 2.5809 
+ mortality = .0006403 
+ country = ENG 
+ region_name = London" title=" R0 = 2.5809 
+ mortality = .0006403 
+ country = ENG 
+ region_name = London" coords="115,309,120,309,120,314,115,314,115,309,"/>
+</map>
+<div  class="c">
+<img alt="The SGPlot Procedure" src="SGPlot1.png" style=" height: 480px; width: 640px;" border="0" usemap="#SGPlot1" class="c">
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX2"></a>
+<div>
+<map name="SGPlot2">
+<Area shape="poly" alt=" R0 = 15.2264 
+ gamma = 0.0290 
+ country = US 
+ region_name = New York" title=" R0 = 15.2264 
+ gamma = 0.0290 
+ country = US 
+ region_name = New York" coords="430,351,435,351,435,356,430,356,430,351,"/>
+<Area shape="poly" alt=" R0 = 22.3195 
+ gamma = 0.0133 
+ country = US 
+ region_name = New Jersey" title=" R0 = 22.3195 
+ gamma = 0.0133 
+ country = US 
+ region_name = New Jersey" coords="617,368,622,368,622,373,617,373,617,368,"/>
+<Area shape="poly" alt=" R0 = 2.7025 
+ gamma = 0.1199 
+ country = US 
+ region_name = Massachusetts" title=" R0 = 2.7025 
+ gamma = 0.1199 
+ country = US 
+ region_name = Massachusetts" coords="99,253,104,253,104,258,99,258,99,253,"/>
+<Area shape="poly" alt=" R0 = 7.7059 
+ gamma = 0.0324 
+ country = ITA 
+ region_name = Emilia-Romagna" title=" R0 = 7.7059 
+ gamma = 0.0324 
+ country = ITA 
+ region_name = Emilia-Romagna" coords="231,347,236,347,236,352,231,352,231,347,"/>
+<Area shape="poly" alt=" R0 = 6.7552 
+ gamma = 0.0417 
+ country = ITA 
+ region_name = Lombardia" title=" R0 = 6.7552 
+ gamma = 0.0417 
+ country = ITA 
+ region_name = Lombardia" coords="206,337,211,337,211,342,206,342,206,337,"/>
+<Area shape="poly" alt=" R0 = 2.2933 
+ gamma = 0.1102 
+ country = ITA 
+ region_name = Piemonte" title=" R0 = 2.2933 
+ gamma = 0.1102 
+ country = ITA 
+ region_name = Piemonte" coords="88,263,93,263,93,268,88,268,88,263,"/>
+<Area shape="poly" alt=" R0 = 3.2071 
+ gamma = 0.1271 
+ country = GER 
+ region_name = Bayern" title=" R0 = 3.2071 
+ gamma = 0.1271 
+ country = GER 
+ region_name = Bayern" coords="112,245,117,245,117,250,112,250,112,245,"/>
+<Area shape="poly" alt=" R0 = 2.4625 
+ gamma = 0.1668 
+ country = GER 
+ region_name = Baden-Württemberg" title=" R0 = 2.4625 
+ gamma = 0.1668 
+ country = GER 
+ region_name = Baden-Württemberg" coords="92,202,97,202,97,207,92,207,92,202,"/>
+<Area shape="poly" alt=" R0 = 1.6916 
+ gamma = 0.3185 
+ country = GER 
+ region_name = Nordrhein-Westfalen" title=" R0 = 1.6916 
+ gamma = 0.3185 
+ country = GER 
+ region_name = Nordrhein-Westfalen" coords="72,39,77,39,77,44,72,44,72,39,"/>
+<Area shape="poly" alt=" R0 = 6.0669 
+ gamma = 0.0507 
+ country = FRA 
+ region_name = Grand Est" title=" R0 = 6.0669 
+ gamma = 0.0507 
+ country = FRA 
+ region_name = Grand Est" coords="188,328,193,328,193,333,188,333,188,328,"/>
+<Area shape="poly" alt=" R0 = 5.0371 
+ gamma = 0.0593 
+ country = FRA 
+ region_name = Hauts-de-France" title=" R0 = 5.0371 
+ gamma = 0.0593 
+ country = FRA 
+ region_name = Hauts-de-France" coords="160,318,165,318,165,323,160,323,160,318,"/>
+<Area shape="poly" alt=" R0 = 6.5734 
+ gamma = 0.0527 
+ country = FRA 
+ region_name = Île-de-France" title=" R0 = 6.5734 
+ gamma = 0.0527 
+ country = FRA 
+ region_name = Île-de-France" coords="201,325,206,325,206,330,201,330,201,325,"/>
+<Area shape="poly" alt=" R0 = 6.8405 
+ gamma = 0.0554 
+ country = ESP 
+ region_name = Community of Madrid" title=" R0 = 6.8405 
+ gamma = 0.0554 
+ country = ESP 
+ region_name = Community of Madrid" coords="208,322,213,322,213,327,208,327,208,322,"/>
+<Area shape="poly" alt=" R0 = 15.9582 
+ gamma = 0.0282 
+ country = ESP 
+ region_name = Catalonia" title=" R0 = 15.9582 
+ gamma = 0.0282 
+ country = ESP 
+ region_name = Catalonia" coords="449,352,454,352,454,357,449,357,449,352,"/>
+<Area shape="poly" alt=" R0 = 8.4515 
+ gamma = 0.0491 
+ country = ESP 
+ region_name = Castile and León" title=" R0 = 8.4515 
+ gamma = 0.0491 
+ country = ESP 
+ region_name = Castile and León" coords="251,329,256,329,256,334,251,334,251,329,"/>
+<Area shape="poly" alt=" R0 = 4.4788 
+ gamma = 0.0703 
+ country = ENG 
+ region_name = North West" title=" R0 = 4.4788 
+ gamma = 0.0703 
+ country = ENG 
+ region_name = North West" coords="146,306,151,306,151,311,146,311,146,306,"/>
+<Area shape="poly" alt=" R0 = 4.6868 
+ gamma = 0.0622 
+ country = ENG 
+ region_name = Midlands" title=" R0 = 4.6868 
+ gamma = 0.0622 
+ country = ENG 
+ region_name = Midlands" coords="151,315,156,315,156,320,151,320,151,315,"/>
+<Area shape="poly" alt=" R0 = 2.5809 
+ gamma = 0.1206 
+ country = ENG 
+ region_name = London" title=" R0 = 2.5809 
+ gamma = 0.1206 
+ country = ENG 
+ region_name = London" coords="95,252,100,252,100,257,95,257,95,252,"/>
+</map>
+<div  class="c">
+<img alt="The SGPlot Procedure" src="SGPlot2.png" style=" height: 480px; width: 640px;" border="0" usemap="#SGPlot2" class="c">
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX3"></a>
+<div>
+<map name="SGPlot3">
+<Area shape="poly" alt=" beta = 0.3540 
+ gamma = 0.0290 
+ country = US 
+ region_name = New York" title=" beta = 0.3540 
+ gamma = 0.0290 
+ country = US 
+ region_name = New York" coords="308,351,313,351,313,356,308,356,308,351,"/>
+<Area shape="poly" alt=" beta = 0.2814 
+ gamma = 0.0133 
+ country = US 
+ region_name = New Jersey" title=" beta = 0.2814 
+ gamma = 0.0133 
+ country = US 
+ region_name = New Jersey" coords="169,368,174,368,174,373,169,373,169,368,"/>
+<Area shape="poly" alt=" beta = 0.2915 
+ gamma = 0.1199 
+ country = US 
+ region_name = Massachusetts" title=" beta = 0.2915 
+ gamma = 0.1199 
+ country = US 
+ region_name = Massachusetts" coords="188,253,193,253,193,258,188,258,188,253,"/>
+<Area shape="poly" alt=" beta = 0.2454 
+ gamma = 0.0324 
+ country = ITA 
+ region_name = Emilia-Romagna" title=" beta = 0.2454 
+ gamma = 0.0324 
+ country = ITA 
+ region_name = Emilia-Romagna" coords="100,347,105,347,105,352,100,352,100,347,"/>
+<Area shape="poly" alt=" beta = 0.2812 
+ gamma = 0.0417 
+ country = ITA 
+ region_name = Lombardia" title=" beta = 0.2812 
+ gamma = 0.0417 
+ country = ITA 
+ region_name = Lombardia" coords="169,337,174,337,174,342,169,342,169,337,"/>
+<Area shape="poly" alt=" beta = 0.2305 
+ gamma = 0.1102 
+ country = ITA 
+ region_name = Piemonte" title=" beta = 0.2305 
+ gamma = 0.1102 
+ country = ITA 
+ region_name = Piemonte" coords="72,263,77,263,77,268,72,268,72,263,"/>
+<Area shape="poly" alt=" beta = 0.4027 
+ gamma = 0.1271 
+ country = GER 
+ region_name = Bayern" title=" beta = 0.4027 
+ gamma = 0.1271 
+ country = GER 
+ region_name = Bayern" coords="401,245,406,245,406,250,401,250,401,245,"/>
+<Area shape="poly" alt=" beta = 0.4021 
+ gamma = 0.1668 
+ country = GER 
+ region_name = Baden-Württemberg" title=" beta = 0.4021 
+ gamma = 0.1668 
+ country = GER 
+ region_name = Baden-Württemberg" coords="399,202,404,202,404,207,399,207,399,202,"/>
+<Area shape="poly" alt=" beta = 0.5162 
+ gamma = 0.3185 
+ country = GER 
+ region_name = Nordrhein-Westfalen" title=" beta = 0.5162 
+ gamma = 0.3185 
+ country = GER 
+ region_name = Nordrhein-Westfalen" coords="617,39,622,39,622,44,617,44,617,39,"/>
+<Area shape="poly" alt=" beta = 0.3040 
+ gamma = 0.0507 
+ country = FRA 
+ region_name = Grand Est" title=" beta = 0.3040 
+ gamma = 0.0507 
+ country = FRA 
+ region_name = Grand Est" coords="212,328,217,328,217,333,212,333,212,328,"/>
+<Area shape="poly" alt=" beta = 0.2916 
+ gamma = 0.0593 
+ country = FRA 
+ region_name = Hauts-de-France" title=" beta = 0.2916 
+ gamma = 0.0593 
+ country = FRA 
+ region_name = Hauts-de-France" coords="188,318,193,318,193,323,188,323,188,318,"/>
+<Area shape="poly" alt=" beta = 0.3415 
+ gamma = 0.0527 
+ country = FRA 
+ region_name = Île-de-France" title=" beta = 0.3415 
+ gamma = 0.0527 
+ country = FRA 
+ region_name = Île-de-France" coords="284,325,289,325,289,330,284,330,284,325,"/>
+<Area shape="poly" alt=" beta = 0.3782 
+ gamma = 0.0554 
+ country = ESP 
+ region_name = Community of Madrid" title=" beta = 0.3782 
+ gamma = 0.0554 
+ country = ESP 
+ region_name = Community of Madrid" coords="354,322,359,322,359,327,354,327,354,322,"/>
+<Area shape="poly" alt=" beta = 0.4468 
+ gamma = 0.0282 
+ country = ESP 
+ region_name = Catalonia" title=" beta = 0.4468 
+ gamma = 0.0282 
+ country = ESP 
+ region_name = Catalonia" coords="485,352,490,352,490,357,485,357,485,352,"/>
+<Area shape="poly" alt=" beta = 0.4115 
+ gamma = 0.0491 
+ country = ESP 
+ region_name = Castile and León" title=" beta = 0.4115 
+ gamma = 0.0491 
+ country = ESP 
+ region_name = Castile and León" coords="417,329,422,329,422,334,417,334,417,329,"/>
+<Area shape="poly" alt=" beta = 0.3097 
+ gamma = 0.0703 
+ country = ENG 
+ region_name = North West" title=" beta = 0.3097 
+ gamma = 0.0703 
+ country = ENG 
+ region_name = North West" coords="223,306,228,306,228,311,223,311,223,306,"/>
+<Area shape="poly" alt=" beta = 0.2868 
+ gamma = 0.0622 
+ country = ENG 
+ region_name = Midlands" title=" beta = 0.2868 
+ gamma = 0.0622 
+ country = ENG 
+ region_name = Midlands" coords="179,315,184,315,184,320,179,320,179,315,"/>
+<Area shape="poly" alt=" beta = 0.3055 
+ gamma = 0.1206 
+ country = ENG 
+ region_name = London" title=" beta = 0.3055 
+ gamma = 0.1206 
+ country = ENG 
+ region_name = London" coords="215,252,220,252,220,257,215,257,215,252,"/>
+</map>
+<div  class="c">
+<img alt="The SGPlot Procedure" src="SGPlot3.png" style=" height: 480px; width: 640px;" border="0" usemap="#SGPlot3" class="c">
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX4"></a>
+<div>
+<map name="SGPlot4">
+<Area shape="poly" alt=" mortality = 0.00220 
+ gamma = 0.0290 
+ country = US 
+ region_name = New York" title=" mortality = 0.00220 
+ gamma = 0.0290 
+ country = US 
+ region_name = New York" coords="464,351,469,351,469,356,464,356,464,351,"/>
+<Area shape="poly" alt=" mortality = 0.00291 
+ gamma = 0.0133 
+ country = US 
+ region_name = New Jersey" title=" mortality = 0.00291 
+ gamma = 0.0133 
+ country = US 
+ region_name = New Jersey" coords="591,368,596,368,596,373,591,373,591,368,"/>
+<Area shape="poly" alt=" mortality = .0009884 
+ gamma = 0.1199 
+ country = US 
+ region_name = Massachusetts" title=" mortality = .0009884 
+ gamma = 0.1199 
+ country = US 
+ region_name = Massachusetts" coords="248,253,253,253,253,258,248,258,248,253,"/>
+<Area shape="poly" alt=" mortality = 0.00104 
+ gamma = 0.0324 
+ country = ITA 
+ region_name = Emilia-Romagna" title=" mortality = 0.00104 
+ gamma = 0.0324 
+ country = ITA 
+ region_name = Emilia-Romagna" coords="257,347,262,347,262,352,257,352,257,347,"/>
+<Area shape="poly" alt=" mortality = 0.00167 
+ gamma = 0.0417 
+ country = ITA 
+ region_name = Lombardia" title=" mortality = 0.00167 
+ gamma = 0.0417 
+ country = ITA 
+ region_name = Lombardia" coords="370,337,375,337,375,342,370,342,370,337,"/>
+<Area shape="poly" alt=" mortality = 0.00105 
+ gamma = 0.1102 
+ country = ITA 
+ region_name = Piemonte" title=" mortality = 0.00105 
+ gamma = 0.1102 
+ country = ITA 
+ region_name = Piemonte" coords="258,263,263,263,263,268,258,268,258,263,"/>
+<Area shape="poly" alt=" mortality = .0001603 
+ gamma = 0.1271 
+ country = GER 
+ region_name = Bayern" title=" mortality = .0001603 
+ gamma = 0.1271 
+ country = GER 
+ region_name = Bayern" coords="100,245,105,245,105,250,100,250,100,245,"/>
+<Area shape="poly" alt=" mortality = .0001493 
+ gamma = 0.1668 
+ country = GER 
+ region_name = Baden-Württemberg" title=" mortality = .0001493 
+ gamma = 0.1668 
+ country = GER 
+ region_name = Baden-Württemberg" coords="98,202,103,202,103,207,98,207,98,202,"/>
+<Area shape="poly" alt=" mortality = .0001125 
+ gamma = 0.3185 
+ country = GER 
+ region_name = Nordrhein-Westfalen" title=" mortality = .0001125 
+ gamma = 0.3185 
+ country = GER 
+ region_name = Nordrhein-Westfalen" coords="92,39,97,39,97,44,92,44,92,39,"/>
+<Area shape="poly" alt=" mortality = .0005508 
+ gamma = 0.0507 
+ country = FRA 
+ region_name = Grand Est" title=" mortality = .0005508 
+ gamma = 0.0507 
+ country = FRA 
+ region_name = Grand Est" coords="170,328,175,328,175,333,170,333,170,328,"/>
+<Area shape="poly" alt=" mortality = .0002733 
+ gamma = 0.0593 
+ country = FRA 
+ region_name = Hauts-de-France" title=" mortality = .0002733 
+ gamma = 0.0593 
+ country = FRA 
+ region_name = Hauts-de-France" coords="121,318,126,318,126,323,121,323,121,318,"/>
+<Area shape="poly" alt=" mortality = .0005653 
+ gamma = 0.0527 
+ country = FRA 
+ region_name = Île-de-France" title=" mortality = .0005653 
+ gamma = 0.0527 
+ country = FRA 
+ region_name = Île-de-France" coords="173,325,178,325,178,330,173,330,173,325,"/>
+<Area shape="poly" alt=" mortality = 0.00136 
+ gamma = 0.0554 
+ country = ESP 
+ region_name = Community of Madrid" title=" mortality = 0.00136 
+ gamma = 0.0554 
+ country = ESP 
+ region_name = Community of Madrid" coords="313,322,318,322,318,327,313,327,313,322,"/>
+<Area shape="poly" alt=" mortality = .0009919 
+ gamma = 0.0282 
+ country = ESP 
+ region_name = Catalonia" title=" mortality = .0009919 
+ gamma = 0.0282 
+ country = ESP 
+ region_name = Catalonia" coords="248,352,253,352,253,357,248,357,248,352,"/>
+<Area shape="poly" alt=" mortality = .0008715 
+ gamma = 0.0491 
+ country = ESP 
+ region_name = Castile and León" title=" mortality = .0008715 
+ gamma = 0.0491 
+ country = ESP 
+ region_name = Castile and León" coords="227,329,232,329,232,334,227,334,227,329,"/>
+<Area shape="poly" alt=" mortality = .0005136 
+ gamma = 0.0703 
+ country = ENG 
+ region_name = North West" title=" mortality = .0005136 
+ gamma = 0.0703 
+ country = ENG 
+ region_name = North West" coords="163,306,168,306,168,311,163,311,163,306,"/>
+<Area shape="poly" alt=" mortality = .0004553 
+ gamma = 0.0622 
+ country = ENG 
+ region_name = Midlands" title=" mortality = .0004553 
+ gamma = 0.0622 
+ country = ENG 
+ region_name = Midlands" coords="153,315,158,315,158,320,153,320,153,315,"/>
+<Area shape="poly" alt=" mortality = .0006403 
+ gamma = 0.1206 
+ country = ENG 
+ region_name = London" title=" mortality = .0006403 
+ gamma = 0.1206 
+ country = ENG 
+ region_name = London" coords="186,252,191,252,191,257,186,257,186,252,"/>
+</map>
+<div  class="c">
+<img alt="The SGPlot Procedure" src="SGPlot4.png" style=" height: 480px; width: 640px;" border="0" usemap="#SGPlot4" class="c">
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX5"></a>
+<div>
+<map name="SGPlot5">
+<Area shape="poly" alt=" rel_dev_median = 0.0445 
+ mortality = 0.00220 
+ country = US 
+ region_name = New York" title=" rel_dev_median = 0.0445 
+ mortality = 0.00220 
+ country = US 
+ region_name = New York" coords="106,130,111,130,111,135,106,135,106,130,"/>
+<Area shape="poly" alt=" rel_dev_median = 0.1884 
+ mortality = 0.00291 
+ country = US 
+ region_name = New Jersey" title=" rel_dev_median = 0.1884 
+ mortality = 0.00291 
+ country = US 
+ region_name = New Jersey" coords="575,49,580,49,580,54,575,54,575,49,"/>
+<Area shape="poly" alt=" rel_dev_median = 0.1599 
+ mortality = .0009884 
+ country = US 
+ region_name = Massachusetts" title=" rel_dev_median = 0.1599 
+ mortality = .0009884 
+ country = US 
+ region_name = Massachusetts" coords="482,269,487,269,487,274,482,274,482,269,"/>
+<Area shape="poly" alt=" rel_dev_median = 0.0790 
+ mortality = 0.00104 
+ country = ITA 
+ region_name = Emilia-Romagna" title=" rel_dev_median = 0.0790 
+ mortality = 0.00104 
+ country = ITA 
+ region_name = Emilia-Romagna" coords="218,264,223,264,223,269,218,269,218,264,"/>
+<Area shape="poly" alt=" rel_dev_median = 0.1130 
+ mortality = 0.00167 
+ country = ITA 
+ region_name = Lombardia" title=" rel_dev_median = 0.1130 
+ mortality = 0.00167 
+ country = ITA 
+ region_name = Lombardia" coords="329,191,334,191,334,196,329,196,329,191,"/>
+<Area shape="poly" alt=" rel_dev_median = 0.1169 
+ mortality = 0.00105 
+ country = ITA 
+ region_name = Piemonte" title=" rel_dev_median = 0.1169 
+ mortality = 0.00105 
+ country = ITA 
+ region_name = Piemonte" coords="342,263,347,263,347,268,342,268,342,263,"/>
+<Area shape="poly" alt=" rel_dev_median = 0.1960 
+ mortality = .0001603 
+ country = GER 
+ region_name = Bayern" title=" rel_dev_median = 0.1960 
+ mortality = .0001603 
+ country = GER 
+ region_name = Bayern" coords="600,364,605,364,605,369,600,369,600,364,"/>
+<Area shape="poly" alt=" rel_dev_median = 0.1764 
+ mortality = .0001493 
+ country = GER 
+ region_name = Baden-Württemberg" title=" rel_dev_median = 0.1764 
+ mortality = .0001493 
+ country = GER 
+ region_name = Baden-Württemberg" coords="536,365,541,365,541,370,536,370,536,365,"/>
+<Area shape="poly" alt=" rel_dev_median = 0.1811 
+ mortality = .0001125 
+ country = GER 
+ region_name = Nordrhein-Westfalen" title=" rel_dev_median = 0.1811 
+ mortality = .0001125 
+ country = GER 
+ region_name = Nordrhein-Westfalen" coords="551,369,556,369,556,374,551,374,551,369,"/>
+<Area shape="poly" alt=" rel_dev_median = 0.0901 
+ mortality = .0005508 
+ country = FRA 
+ region_name = Grand Est" title=" rel_dev_median = 0.0901 
+ mortality = .0005508 
+ country = FRA 
+ region_name = Grand Est" coords="255,319,260,319,260,324,255,324,255,319,"/>
+<Area shape="poly" alt=" rel_dev_median = 0.1644 
+ mortality = .0002733 
+ country = FRA 
+ region_name = Hauts-de-France" title=" rel_dev_median = 0.1644 
+ mortality = .0002733 
+ country = FRA 
+ region_name = Hauts-de-France" coords="497,351,502,351,502,356,497,356,497,351,"/>
+<Area shape="poly" alt=" rel_dev_median = 0.1213 
+ mortality = .0005653 
+ country = FRA 
+ region_name = Île-de-France" title=" rel_dev_median = 0.1213 
+ mortality = .0005653 
+ country = FRA 
+ region_name = Île-de-France" coords="357,318,362,318,362,323,357,323,357,318,"/>
+<Area shape="poly" alt=" rel_dev_median = 0.0626 
+ mortality = 0.00136 
+ country = ESP 
+ region_name = Community of Madrid" title=" rel_dev_median = 0.0626 
+ mortality = 0.00136 
+ country = ESP 
+ region_name = Community of Madrid" coords="165,227,170,227,170,232,165,232,165,227,"/>
+<Area shape="poly" alt=" rel_dev_median = 0.1592 
+ mortality = .0009919 
+ country = ESP 
+ region_name = Catalonia" title=" rel_dev_median = 0.1592 
+ mortality = .0009919 
+ country = ESP 
+ region_name = Catalonia" coords="480,269,485,269,485,274,480,274,480,269,"/>
+<Area shape="poly" alt=" rel_dev_median = 0.0675 
+ mortality = .0008715 
+ country = ESP 
+ region_name = Castile and León" title=" rel_dev_median = 0.0675 
+ mortality = .0008715 
+ country = ESP 
+ region_name = Castile and León" coords="181,282,186,282,186,287,181,287,181,282,"/>
+<Area shape="poly" alt=" rel_dev_median = 0.0555 
+ mortality = .0005136 
+ country = ENG 
+ region_name = North West" title=" rel_dev_median = 0.0555 
+ mortality = .0005136 
+ country = ENG 
+ region_name = North West" coords="142,323,147,323,147,328,142,328,142,323,"/>
+<Area shape="poly" alt=" rel_dev_median = 0.0405 
+ mortality = .0004553 
+ country = ENG 
+ region_name = Midlands" title=" rel_dev_median = 0.0405 
+ mortality = .0004553 
+ country = ENG 
+ region_name = Midlands" coords="93,330,98,330,98,335,93,335,93,330,"/>
+<Area shape="poly" alt=" rel_dev_median = 0.0490 
+ mortality = .0006403 
+ country = ENG 
+ region_name = London" title=" rel_dev_median = 0.0490 
+ mortality = .0006403 
+ country = ENG 
+ region_name = London" coords="121,309,126,309,126,314,121,314,121,309,"/>
+</map>
+<div  class="c">
+<img alt="The SGPlot Procedure" src="SGPlot5.png" style=" height: 480px; width: 640px;" border="0" usemap="#SGPlot5" class="c">
+</div>
+</div>
+<br>
+</div>
+</body>
+</html>
