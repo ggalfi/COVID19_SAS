@@ -42,13 +42,12 @@ data
 	if first.iteration then do;
 		days=valid_to-valid_from+1;	
 		i=i0;
-		s=1-i;	
+		s=1-i;
+		r=0;
 		do d=1 to days;
-			ds=-s*beta*i;
-			dr=i*gamma;
-			s=s+ds;
-			i=i-ds-dr;
-			arrpdec[d]=(mortality*dr);
+			prevr=r;
+			%ODEstep(covid.sir_euler_spec);
+			arrpdec[d]=(mortality*(r-prevr));
 			arrinf[d]=i;
 			arrsus[d]=s;
 		end;

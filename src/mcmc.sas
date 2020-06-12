@@ -24,9 +24,20 @@ data _null_;
 	call symput('gamma_var', log(10)*0.5);
 run;
 
+%ODEspec(
+	dynvars=s i r,
+	dynfunc=%quote(
+			deriv_s=-s*beta*i;
+			deriv_r=i*gamma;
+			deriv_i=-deriv_s-deriv_r;
+			),
+	outds=covid.sir_euler_spec,
+	method=euler
+);
+
 ods graphics on / imagemap=off reset=index;
 ods html path="&coviddir/results/mcmc" (URL=NONE) file="mcmc.html";
-title "MCMC analysis of regions";
+title "MCMC analysis of regions (Euler solver)";
 proc mcmc
 	data=covid.mcmc_input
 	diag=all
@@ -62,13 +73,16 @@ proc mcmc
 		*put Rzero= beta= gamma= i0=;
 
 		i=i0;
-		s=1-i;	
+		s=1-i;
+		r=0;
 		do d=1 to days;
-			ds=-s*beta*i;
+			/*ds=-s*beta*i;
 			dr=i*gamma;
 			s=s+ds;
-			i=i-ds-dr;
-			arrpdec[d]=(mortality*dr);
+			i=i-ds-dr;*/
+			prevr=r;
+			%ODEstep(covid.sir_euler_spec);
+			arrpdec[d]=(mortality*(r-prevr));
 			*put d= i= s= mortality= dr=;
 		end;
 	endnodata;
