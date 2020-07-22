@@ -1,3 +1,4 @@
 *
 !.gitignore
 !mcmc_abt.sas7bdat
+!mcmc_weekly_abt.sas7bdat
