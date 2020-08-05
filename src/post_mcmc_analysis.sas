@@ -25,8 +25,7 @@ PROC SQL;
 QUIT;
 
 /*Scoring the data*/
-data 
-	mcmc_post_full_preds(
+data mcmc_post_full_preds(
 		keep = country region_code region_name 
 			iteration date pred_dec_daily_ratio
 			pred_infected_ratio pred_susceptible_ratio
